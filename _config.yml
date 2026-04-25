@@ -1,5 +1,5 @@
 theme: jekyll-theme-minimal
-description: Bookmark this to keep an eye on my project updates!
+description: The Homepage of Blue Lake, CA
 
 ###########################################################
 ### Welcome to Beautiful Jekyll!
@@ -13,10 +13,10 @@ description: Bookmark this to keep an eye on my project updates!
 ############################
 
 # Name of website
-title: Blue Lake Advocate homepage
+title: Blue Lake Advocate
 
 # Your name to show in the footer
-author: Some Person
+author: Blue Lake Advocate
 
 ###############################################
 # --- List of links in the navigation bar --- #
