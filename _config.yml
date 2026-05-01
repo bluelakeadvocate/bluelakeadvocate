@@ -1,5 +1,5 @@
-theme: jekyll-theme-minimal
 description: The Homepage of Blue Lake, CA
+remote_theme: pages-themes/slate@v0.2.0
 
 ###########################################################
 ### Welcome to Beautiful Jekyll!
@@ -300,3 +300,4 @@ exclude:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-remote-theme
