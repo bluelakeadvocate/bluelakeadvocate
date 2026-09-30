@@ -1,0 +1,107 @@
+diff --git a/_config.yml b/_config.yml
+index ddff933..25c25bc 100644
+--- a/_config.yml
++++ b/_config.yml
+@@ -159,8 +159,8 @@ footer-hover-col: "#B5482C"
+ #mobile-theme-col: "#0085A1"
+ 
+ # For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
+-#site-css:
+-#  - "/assets/css/custom-styles.css"
++site-css:
++  - "/assets/css/custom-styles.css"
+ 
+ # If you have common JavaScript files that should be included in every page, list them here
+ #site-js:
+diff --git a/assets/css/custom-styles.css b/assets/css/custom-styles.css
+new file mode 100644
+index 0000000..e5c1de7
+--- /dev/null
++++ b/assets/css/custom-styles.css
+@@ -0,0 +1,86 @@
++/*
++  Blue Lake Advocate - typography
++  Modeled on the original newspaper (1888-1969); see the 1921 samples.
++
++    Masthead      Pirata One       (live-text stand-in until the traced logo exists)
++    Headlines     League Gothic    (h1, h2; extra-condensed gothic)
++    Subheads      Libre Baskerville Bold (h3, h4)
++    Body          Libre Baskerville
++*/
++
++@import url("https://fonts.googleapis.com/css2?family=League+Gothic&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400;1,700&family=Pirata+One&display=swap");
++
++:root {
++  --font-body: "Libre Baskerville", Georgia, "Times New Roman", serif;
++  --font-headline: "League Gothic", "Oswald", Impact, "Arial Narrow", sans-serif;
++  --font-masthead: "Pirata One", "Libre Baskerville", Georgia, serif;
++}
++
++/* Body: Century-style roman */
++body {
++  font-family: var(--font-body);
++  font-size: 1.0625rem; /* 17px; Libre Baskerville runs wide */
++}
++
++p {
++  line-height: 1.6;
++}
++
++/* Headlines: extra-condensed gothic, all caps */
++h1,
++h2 {
++  font-family: var(--font-headline);
++  font-weight: 400; /* League Gothic has a single weight; avoid faux bold */
++  text-transform: uppercase;
++  letter-spacing: 0.01em;
++  line-height: 1.05;
++}
++
++h1 { font-size: 2.75rem; }
++h2 { font-size: 2.25rem; }
++
++.intro-header .page-heading h1 { font-size: 4rem; }
++.intro-header .post-heading h1 { font-size: 3rem; }
++
++.post-preview .post-title {
++  font-family: var(--font-headline);
++  font-weight: 400;
++  text-transform: uppercase;
++  letter-spacing: 0.01em;
++}
++
++/* Subheads: bold roman */
++h3,
++h4,
++h5,
++h6 {
++  font-family: var(--font-body);
++  font-weight: 700;
++  line-height: 1.25;
++}
++
++/* Masthead: live text until a traced logo is available */
++.navbar-custom .navbar-brand {
++  font-family: var(--font-masthead);
++  font-size: 1.75rem;
++  letter-spacing: 0.02em;
++}
++
++/* Replace the theme's remaining Open Sans with the body face */
++.navbar-custom,
++.navbar-custom .nav-link,
++.post-preview .post-meta,
++.post-heading .post-meta,
++.intro-header .page-heading .page-subheading,
++.intro-header .post-heading .post-subheading,
++footer {
++  font-family: var(--font-body);
++}
++
++/* Column-style justified text with hyphenation, as in the printed paper */
++[role="main"] p,
++.blog-post p {
++  text-align: justify;
++  hyphens: auto;
++  -webkit-hyphens: auto;
++}
