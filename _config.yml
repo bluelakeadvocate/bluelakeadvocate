@@ -23,7 +23,7 @@ author: Blue Lake Advocate
 ###############################################
 
 navbar-links:
-  Blog: "/"
+  Home: "/"
   History: "history"
   About: "aboutme"
 
@@ -52,7 +52,7 @@ round-avatar: true
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "andy@bluelakeadvocate.com"
+  email: "editor@bluelakeadvocate.com"
 #  rss: true  # remove this line if you don't want to show an RSS link at the bottom
   facebook: bluelakeadvocate
 #  github: daattali
