@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: post
 ---
 
 <p><i>Blue Lake Advocate, Volume I, Number 7, 12 June 1888</i></p>
